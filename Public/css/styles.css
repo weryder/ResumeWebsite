@@ -44,6 +44,9 @@
   --bs-dark: #4b636e;
   --bs-primary-rgb: 120, 144, 156;
   --bs-secondary-rgb: 44, 62, 80;
+  --bs-inbetween-rgb: 82,103,118;
+  --bs-inbetween-2-rgb: 101,124,137;
+  --bs-navbar: 26,37,47;
   --bs-success-rgb: 25, 135, 84;
   --bs-info-rgb: 13, 202, 240;
   --bs-warning-rgb: 255, 193, 7;
@@ -7095,7 +7098,12 @@ progress {
 
 .bg-secondary {
   --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-secondary-rgb), var(--bs-bg-opacity)) !important;
+  background-color: rgba(var(--bs-inbetween-rgb), var(--bs-bg-opacity)) !important;
+}
+
+.bg-navbar {
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-navbar), var(--bs-bg-opacity)) !important;
 }
 
 .bg-success {
@@ -7140,7 +7148,7 @@ progress {
 
 .bg-body {
   --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-body-bg-rgb), var(--bs-bg-opacity)) !important;
+  background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
 }
 
 .bg-transparent {
